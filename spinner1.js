@@ -1,28 +1,49 @@
-let count = 100;
+let interval = 0;
 
-for (let i = 0; i < 100; i++) {
+setTimeout(() => {
+  process.stdout.write('\r|   ');
+}, 100);
 
-  setTimeout(() => {
-    process.stdout.write('\r|   ');
-  }, count + (i * 1000));
+setTimeout(() => {
+  process.stdout.write('\r/   ');
+}, 300);
 
-  setTimeout(() => {
-    process.stdout.write('\r/   ');
-  }, count * 2 + (i * 1000));
+setTimeout(() => {
+  process.stdout.write('\r-   ');
+}, 500);
 
-  setTimeout(() => {
-    process.stdout.write('\r-   ');
-  }, count * 3 + (i * 1000));
+setTimeout(() => {
+  // Need to escape the backslash since it's a special character.
+  process.stdout.write('\r\\   ');
+}, 700);
 
-  setTimeout(() => {
-    // Need to escape the backslash since it's a special character.
-    process.stdout.write('\r\\   ');
-  }, count * 4 + (i * 1000));
+// ... fill in the rest yourself ...
 
-  // ... fill in the rest yourself ...
+setTimeout(() => {
+  // Need to escape the backslash since it's a special character.
+  process.stdout.write('\r|   ');
+}, 900);
 
-  setTimeout(() => {
-    // Need to escape the backslash since it's a special character.
-    process.stdout.write('\r|   ');
-  }, count * 5 + (i * 1000));
-};
+setTimeout(() => {
+  process.stdout.write('\r|   ');
+}, 1100);
+
+setTimeout(() => {
+  process.stdout.write('\r/   ');
+}, 1300);
+
+setTimeout(() => {
+  process.stdout.write('\r-   ');
+}, 1500);
+
+setTimeout(() => {
+  // Need to escape the backslash since it's a special character.
+  process.stdout.write('\r\\   ');
+}, 1700);
+
+// ... fill in the rest yourself ...
+
+setTimeout(() => {
+  // Need to escape the backslash since it's a special character.
+  process.stdout.write('\r|   ');
+}, 1900);
