@@ -1,5 +1,3 @@
-let interval = 0;
-
 setTimeout(() => {
   process.stdout.write('\r|   ');
 }, 100);
